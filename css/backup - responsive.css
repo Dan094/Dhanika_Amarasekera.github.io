@@ -1,0 +1,296 @@
+@media only screen and (max-width:850px){
+
+    
+/* === Navigation Menu ===*/
+    
+.menu {
+        flex-direction:column;
+        position:absolute;
+        width:60%;
+        height:80%;
+        right:0;
+        z-index:15;
+        background-color:black;
+        color:white;
+        margin-top:100px;
+        right:-500px;
+        position: fixed;
+        font-size:1rem;
+        border:1px solid white;
+}
+    
+.mitem {
+        border:2px solid white;
+        margin:2rem;
+        padding:10px;
+    }
+    
+.darkModeBut {
+            display:none;
+}
+    
+.close {
+        position:fixed;
+        display:inline-block;
+        cursor:pointer;
+        z-index:20;
+        margin:30px;
+        right:0;
+    }
+ 
+
+    
+/* shoe the menu option in mobile screen */
+    
+.move {
+        right:0px;
+        transition:all 500ms ease;
+    }
+     
+.stroke {
+        width:50px;
+        height:5px;
+        margin:5px;
+        background-color:white;
+        border:1px solid white;
+    }
+    
+.stroke1{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(0px, 6px);
+}
+.stroke2  {opacity: 0;}
+
+.stroke3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-5px, -8px);
+    
+}
+    
+    
+/*==  Other Elementes of the page  ==*/
+
+    
+#floatingImg {width:40%;}
+    
+#text {
+       margin-top:-3rem;
+       font-size:0.8rem;
+}
+    
+@keyframes logoMovement {
+    
+from{
+         margin-top:15rem;
+         width:50%;
+         transform:rotate(0deg);
+    }
+    
+    to {
+        margin-top:15rem;
+        transform: rotate(-90deg);
+    }
+}
+    
+    
+.imgs {
+        padding:2rem;
+        flex:3;
+        width:50%;
+}
+    
+#arrow {
+        float:right;
+        margin-left:-300px;
+    }
+
+    
+#BioImg {
+        width:80%;
+        left:0;
+        top:-350px;
+        position:relative;
+        z-index:1;
+    }
+    
+#BioDesb {
+        background-color: black;
+        color:white;
+        width:100%;
+        top:-500px;
+        left:20px;
+        position: relative;
+    }
+
+/*  Display Content Page  */
+#gallary {
+        flex-direction:column;
+        justify-content:baseline;
+        align-items: none;
+    }
+
+.displayContent {
+        background-color:black;
+        width:100vw;
+        height:100%;
+        top:0;
+        position: absolute;
+        color:white;
+        visibility:hidden;
+}
+
+.col1 {
+    display:block;
+    width:100%;
+    height:30%;
+
+}
+
+.col2 {
+    width:100%;
+    display:block;
+    height:40%;
+}
+
+.pTitle  {
+    width:100%;
+    margin-top:4rem;
+ }
+
+ .pInfo {
+    width:90%;
+    padding:2rem;
+} 
+
+.strokev {
+    width:50px;
+    height:5px;
+}
+
+.footer {
+    width:100%;
+    height:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    flex-direction:column;
+}
+
+.socials {
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+}
+
+h5  a {
+    text-decoration:none;
+    color:black;
+    margin-bottom:20px;
+}
+
+
+
+    
+#follow {
+        display:none;
+        }
+
+
+form {
+ display: flex;
+}
+
+.inquieryForm {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.inquieryForm {
+    width:30%;
+    height:50%;
+    position: absolute;
+    display: flex;
+    animation-fill-mode:forwards;
+    opacity:0;
+    flex-direction:column;
+
+}
+
+form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+}
+
+.submitBut {
+    margin-top:2rem;
+}
+
+#floatingImg {
+    margin-top:0;
+    margin-bottom:20%;
+}
+
+
+@keyframes logoMovement {
+    from{
+        margin-top:15rem;
+        width:50%;
+        transform: rotate(0deg);
+        opacity:1;
+    }
+    
+    to {margin-top:24rem;
+        transform: rotate(-90deg);
+        opacity:0;
+    }
+
+    h5 a {
+       padding-top:5rem;
+    }
+
+
+    
+ .letter {
+        margin:0;
+        width:100%;
+        position:absolute;
+        animation: apear 2s ease;
+    }
+
+#gallary {    
+        border-top:2px solid;
+        margin-top:;
+        width:100vw;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        flex-wrap:wrap;
+/*            display: none;*/
+            }
+
+#main {
+        position:relative;
+           }
+
+#container {
+            position: relative;
+            margin-top:4rem;
+            flex:1;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width:50%;
+            transition: all ease 1s;
+            animation-fill-mode: forwards;
+}

@@ -1,0 +1,22 @@
+@media screen and  (max-width: 1000px){
+    
+    #BioImg {
+        top:-50px;
+         left:10px;
+        width:50%;
+    }
+    
+ .BioText {
+     margin-right:-15%;
+     color:black;
+    } 
+    
+    #container {
+        margin-top:-30rem;
+    }
+}
+
+
+
+
+

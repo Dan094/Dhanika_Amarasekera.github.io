@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <title>Portfolio Website</title>
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      <link type="text/css" rel="stylesheet" href="css/responsive.css">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      
+               
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+      <div id="main">
+  
+              <div id="upperSection">
+                  <div class="portfolioTag">PORTFOLIO</div>
+                   <div class="close" onclick="hamBut()">
+                            <div class="stroke str1"></div>
+                            <div class="stroke str2"></div>
+                            <div class="stroke str3"></div>
+                        </div>
+                    <div class="menu">
+                        <div class="mitem" onclick="showElements()" onclick="closeHamBut()">HOME</div>
+                        <div class="mitem" onclick="moveElements()">ABOUT ME</div>
+                        <img src="svgs/icons/darkmode.svg" class="darkModeBut" alt="darkMode" >
+                        <div class="mitem" onclick="catShow()">MY WORK</div>
+                        <div class="mitem" onclick="closeAboutMe()">CONTACT</div>
+                    </div>
+                    
+              </div>
+              <div id="middleSection">
+                  <!--  Box for animtion  -->
+                  <div id="container">
+                        <img src="svgs/letterD.svg" class="letter" id="ld" alt="letterSvg">
+                        <img src="svgs/letterA.svg" class="letter" id="la" alt="letterSvg">
+                        <img src="svgs/letterN.svg" class="letter" id="ln" alt="letterSvg">
+                        <img src="svgs/letterstroke.svg" class="letter" id="st1" alt="letterSvg">
+                        <img src="svgs/letterstrokeb.svg" class="letter" id="st2" alt="letterSvg">
+                        
+                  </div> 
+                   <!--  About Me Section  -->
+                  <div class="AboutMe">
+                             <img src="imgs/IMG_0132.jpg" alt="bioImg" id="BioImg">
+                       <div id="BioDesb" class="BioText">
+                           <span id="BioTitle"><h2>Dhanika Amarasekera.</h2></span> <br>
+                           <p>
+                           Hello, my name is Dhanika. I am a freelancer in Graphic Design and Front-End Developement. I am also student at BCIT in the Digital Design and Development program. 
+                           </p> <br>
+                           
+                           <ul id="SpecialtyList">
+                            <li>GRAPHIC DESIGN</li>
+                            <li>WEB DESIGN</li>
+                            <li>UX/UI DESIGN</li>
+                            <li>MOTION GRAPHICS</li>
+                           </ul>
+                           
+                  </div>  
+                  </div>
+                  
+                   <!--  Contact Form Section  -->
+                  <div class="inquieryForm">
+                      <h2> SEND ME A QUICK EMAIL</h2>
+                     <form action="post" method="get">
+                           <input type="text" placeholder="NAME"><br><br>
+                           <input type="email" placeholder="EMAIL ADDRESS"><br><br>
+                           <textarea placeholder="YOUR MESSAGE" rows="15" cols="40"></textarea>
+                            <button class="submitBut">Send</button>
+                      </form>
+                  </div>
+                 
+                  
+                  <div class="ContactFrom">
+                      <div class="social">
+                            <div class="socialLinks">
+                                <a href="#"><img class="socialIcons" src="svgs/icons/linkin.svg" alt="Social_icon"></a>
+                                <a href="https://www.behance.net/dhanikamar345f"><img class="socialIcons" src="svgs/icons/behance.svg" alt="Social_icon"></a>
+                                <a href="https://www.instagram.com/artsbydhan/"><img class="socialIcons" src="svgs/icons/instagram.svg" alt="Social_icon"></a>
+                            </div>
+                      </div>
+                  </div>
+               
+                  
+                  <div id="floatingImg">
+                    <img src="imgs/img1.png" alt="Mid" id="skull">
+                  </div>
+                  <div id="text">
+                        GRAPHIC DESIGNER <br><br> &amp; <br><br> FRONT-END DEVELOPER
+                  </div>
+                  
+              </div>
+          
+    
+                    <img src="svgs/icons/arrow.svg" alt="arrow" id="arrow" onclick="catShow()">
+             
+      </div> 
+      
+      
+      
+      
+      <div class="portfolio">
+                
+               <div id="gallary">
+                    <img src="imgs/posters/poster_mockup_MD.jpg" class="imgs" onclick="openPp(this)" id="imgP1" alt="artwork">
+                    <img src="imgs/portfolio_img/boy%20copy.png" class="imgs" onclick="openPp(this)" id="imgP2" alt="artwork">
+                    <img src="imgs/portfolio_img/winter.jpg" class="imgs" onclick="openPp(this)" id="imgP4" alt="artwork">
+                    <img src="imgs/posters/Vertical-Flyer-Poster-Frame-Mockup.jpg" class="imgs" onclick="openPp(this)" id="imgP5" alt="artwork">
+                   
+                    <video autoplay loop muted id="video" width="300" class="imgs">
+                            <source src="video/Dhanika_Amarasekera_IntroBumper.mp4">ss
+                        </video>
+                    <img src="imgs/posters/Free-iPhone-X-Mockup-01.jpg" class="imgs" onclick="openPp(this)"  id="imgP6" alt="artwork">
+                   
+                   <div class="displayContent">
+                       <div class="col1">
+                                <div class="closeIcon" onclick="closePp()">
+                                    <div class="strokev str1v"></div>
+                                        <div class="strokev str3v"></div>
+                                    </div>
+                                <img class="pImg" src="#" alt="imgContainer">
+                       </div>
+                       
+                       <div class="col2">
+                               
+                            <div class="pTitle"></div>
+                            <div class="pInfo"></div>
+                            <div class="moreImg"></div>
+                            <div class="moreImg"></div>
+                       </div>
+                        
+                        
+                        <div class="Ptxt"></div>
+                   </div>
+        </div>
+           
+      </div>
+      
+      <div class="footer">
+            <footer>Dhanika Amarasekera &copy; 2019</footer>
+            <h5><a href = "mailto: Dhanikamarasekera@gmail.com">Dhanikamarasekera@gmail.com</a></h5> <br>
+            <div class="socials">
+                    <a href="#"><img class="socialIcons" src="svgs/icons/linkin.svg" alt="Social_icon"></a>
+                    <a href="https://www.behance.net/dhanikamar345f"><img class="socialIcons" src="svgs/icons/behance.svg" alt="Social_icon"></a>
+                    <a href="https://www.instagram.com/artsbydhan/"><img class="socialIcons" src="svgs/icons/instagram.svg" alt="Social_icon"></a>
+            </div>
+          
+      </div>
+    
+      <script src="js/landingpage.js"></script>
+
+            
+  </body>
+
+</html>

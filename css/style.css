@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* { font-family: 'Montserrat', sans-serif;
+    padding:0px;
+    margin:0px;
+}
+
+/*  ====================================== LANDING/MAIN PAGE SECTION ======================================   */
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#main {
+     letter-spacing:10px;
+     width:100vw;
+     height:100vh;
+     padding:0px;
+     margin:0px;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+     flex-direction:column;
+     border-bottom:2px solid;
+     bottom:0px;
+     background-color:#00cece;
+     color:white;
+}
+
+#arrow {
+    margin-top:15%;
+    height:8%;
+    z-index:100;
+    animation: arrowAnimate 3s ease infinite;
+    animation-delay:4s;
+    opacity:0;
+}
+
+
+@keyframes arrowAnimate {
+    0% {
+        opacity:0;
+        transform:translateY(-5vw);
+        }
+    50% {
+        opacity:1;
+        transform:translateY(-2vw);
+    }
+    
+    50% {
+        opacity:1;
+        transform:translateY(-5vw);
+    }
+}
+
+
+.gradient
+{
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(211, 211, 211, 1) 0%,rgba(255, 255, 255, 1) 36.56%);
+  background : -webkit-linear-gradient(90deg, rgba(211, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 36.56%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(211, 211, 211, 1) ),color-stop(0.3656,rgba(255, 255, 255, 1) ));
+  background : -o-linear-gradient(90deg, rgba(211, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 36.56%);
+  background : -ms-linear-gradient(90deg, rgba(211, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 36.56%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D3D3D3', endColorstr='#FFFFFF' ,GradientType=0)";
+  background : linear-gradient(0deg, rgba(211, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 36.56%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#D3D3D3' , GradientType=0);
+}
+
+
+/*  ========================================  upper section  ========================================   */
+
+#upperSection { 
+                width:100%;
+                flex:1;
+                display: flex;
+                padding:20px;
+
+}
+
+.portfolioTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    font-weight: 900;
+    border:2px solid white;
+}
+
+
+.close {
+    display:none;
+    float:right;
+    z-index:12;
+    transition:transform 200ms ease;
+    position:absolute;
+/*   margin: 50px 0 50px 0 ;*/
+}
+
+.close > .stroke {
+    z-index:12;
+    border:black solid 2px;
+}
+
+.menu {
+       margin-top:2rem;
+       position:relative;
+       width:100%;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       flex-direction:row;
+}
+
+.darkModeBut {
+    transition: transform 500ms ease;
+    margin:0 2rem 0 2rem;
+    width:3%;
+}
+
+.darkModeBut:hover {
+     transform: scale(1.4);
+}
+
+
+
+.mitem {
+    letter-spacing: 10px;
+    float:2;
+    text-decoration:none;
+    padding:1.4rem;
+    
+}
+
+.mitem:hover {
+    border-bottom: 1.5px solid;
+    border-bottom: 1.5px solid;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+/*  ======================================= Middle Section  ======================================================  */
+
+#middleSection {
+                width:100%;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction:column;
+                flex:13;
+                
+}
+
+#container {
+            position: absolute;
+            margin-top:4rem;
+            flex:1;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width:70%;
+            transition: all ease 1s;
+            animation-fill-mode: forwards;
+}
+
+@keyframes logoMovement {
+    from{
+        width:70%;
+        transform: rotate(0deg);
+        opacity:1;
+    }
+    
+    to {
+        width:0%;
+        transform: rotate(-90deg);
+        opacity:0;
+    }
+}
+
+
+@keyframes logoMovementBack {
+    from{
+        width:0%;
+        transform: rotate(-90deg);
+    }
+    
+    to {
+        width:70%;
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes moveout {
+    from {margin-left:0px;
+          opacity:1;}
+    to {margin-left:-1000px;
+        opacity: 0;}
+}
+
+@keyframes movein {
+    from {margin-left:-1000px;
+            opacity:0;}
+    to {margin-left:0px;
+        opacity:1;}
+}
+
+
+#text {
+    padding:12px;
+    opacity:0;
+    position: relative;
+    top:0;
+    text-align: center;
+    font-weight: bold;
+    flex:3;
+    width:30%;
+    margin-top:10rem;
+    animation: apearAndUp 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2.8s;
+}
+
+.letter {
+    margin:0;
+    width:90%;
+    position:absolute;
+    animation: apear 2s ease;
+}
+
+#ld, #la, #ln, #st1, #st2 {
+    opacity:0;
+    position: absolute;
+    animation:apear 2s ease, ; 
+    animation-fill-mode: forwards;  
+}
+
+
+#ld {
+    animation-delay: 1s;
+}
+#la {
+    animation-delay: 1.5s;
+}
+#ln {
+    animation-delay: 2s;
+}
+
+#st1 {
+    animation-delay: 2.5s;
+}
+#st2 {
+    animation-delay: 2.8s;
+}
+
+
+#floatingImg {
+    margin-top:5%;
+    animation: float 5s infinite;
+    position: absolute;
+    display: block;
+    width:18%;
+    flex:3;
+    animation-fill-mode: forwards;
+}
+
+#skull {
+    width:100%;
+    opacity:0;
+}
+
+
+
+/* ====== ABOUT ME SECTION  ====== */
+
+.AboutMe {
+    margin-top:30rem;
+    width:78%;
+    height:100%;
+    padding:1rem;
+    animation-fill-mode:forwards !important;
+    animation-timing-function:ease;
+    position: absolute;
+}
+
+#BioImg {
+      width:30%;
+      position:absolute;
+      float:left;
+      top:20px;
+      left:20px;
+      box-shadow: 2px;
+      opacity:0;
+      animation-fill-mode: forwards;
+}
+
+@keyframes imgAppear {
+    from{opacity:0;
+         left:30rem;}
+    to{opacity:1;
+       left:10rem;}
+}
+
+@keyframes imgDisappear {
+    from{opacity:1;}
+    to{opacity:0;}
+}
+
+@keyframes bioTextAppear {
+    from{opacity:0;
+         left:50rem;}
+     to{opacity:1;
+         left:0rem;}
+}
+
+
+
+#BioTitle {
+    text-align: center;
+    font-size:1.5em;
+    width:10em;
+    letter-spacing:2;
+    color:black;
+    
+}
+
+#SpecialtyList {
+    color:#00c7c7;
+    list-style:none;
+    margin:1.5rem;
+}
+
+
+#BioDesb {
+    color:white;
+    letter-spacing:2;
+    padding:3rem;
+    width:50%;
+    float:right;
+    letter-spacing:0;
+    margin-top:30%;
+    opacity:0;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes imgAppear {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes imgDisappear {
+    from{opacity:1;}
+    to{opacity:0;}
+}
+
+@keyframes moveUp {
+    from{margin-top:20%;
+         opacity: 0;}
+    to{margin-top:0%;
+        opacity:1;}
+}
+
+@keyframes moveDown {
+    from{margin-top:0%;
+         opacity: 1;}
+    to{margin-top:20%;
+        opacity:0;}
+}
+
+
+/*  =====  bottom section   =====  */
+
+#bottomSection {
+                padding-bottom:10px;
+                width:100%;
+                flex:1;
+}
+
+#name {
+    float:left;
+    margin-left:4.5rem;
+    
+}
+
+#social_links {
+    float:left;
+    margin-left:4.5rem;
+}
+
+#social_links, #name {
+       position: relative;
+       width:20%;
+       height:100%;
+       display:flex;
+       justify-content: center;
+       align-items:center;
+}
+
+.iconbox {
+    margin-left:2rem;
+    width:10%;
+}
+
+.icons {
+    position: relative;    
+    width:100%;
+}
+
+#logo {
+    width:100%;
+}
+
+
+/*  =============================================== Animations ==================================================*/
+
+
+/* Logo Animation */
+
+@keyframes apear {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes extentionD {
+    from {width:0%;}
+    to {width:30%;}
+}
+
+@keyframes apearAndUp {
+    from {opacity:0;
+          top:100px; 
+          }
+    to {opacity:1;
+        top:70px;}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+@keyframes imgappear {
+    0% {
+        opacity:0;
+    }
+    100% {
+         opacity:1;
+    }
+}
+
+
+/*  ====================================== PORTFOLIO DISPLAY SECTION =====================================   */
+
+
+
+
+
+
+#gallary {    
+            width:100vw;
+            padding:0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:row;
+            flex-wrap:wrap;
+/*            display: none;*/
+                }
+                
+                
+.imgs {
+        padding:2rem;
+        flex:3;
+        width:25%;
+}
+
+.portfolio {        
+            margin-top:20px;
+            position: relative;
+            width:100vw;
+            height:100%;
+            padding:0px;
+            margin:0px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction:column;
+            
+}
+
+
+
+
+/*  =============================== CATAGORY SECTION ===============================   */
+
+
+#posters {
+    display:none;
+}
+
+#categoies {
+    letter-spacing: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    transition: all 200ms ease;
+    margin-bottom:30%;
+}
+
+* {
+    transition: all ease-in-out; 
+}
+
+
+.catbox {
+    position:relative;
+    display:flex;
+    flex:1;
+    margin:25px;
+    height:50vh;
+    perspective: 1000px;
+}
+
+#cosCatbox {
+    flex-direction:column;
+}
+
+.title {
+    margin-bottom:10%;
+}
+
+.innerBox {
+    display: inline;
+    margin:0;
+    padding:20px;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    transform-style: preserve-3d;
+  
+}
+
+.poster {
+    width:50%;
+}
+
+
+
+/* ================================= CONTACT FORM SECTION =========================================*/
+
+
+.inquieryForm {
+    width:30%;
+    height:30%;
+    margin-left:-20rem;
+    position: absolute;
+    display: flex;
+    animation-fill-mode:forwards;
+    align-items: center;
+    opacity:0;
+    z-index:2;
+    flex-direction: column;
+}
+
+.inquieryForm > h2 {
+     text-align: center;
+     padding:2rem;
+}
+
+
+input, textarea {
+       padding:2%;
+       border:2px solid;
+       font-size:0.9em;
+       text-align: center;
+
+}
+
+
+.ContactFrom{
+    width:100%;
+    height:50%;
+    float:right;
+    margin-left:30rem;
+    opacity:0;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bringSocialLinks {
+    from{margin-left:20rem;
+         opacity:0;}
+    to{margin-left:50rem;
+        opacity:1;}
+}
+
+@keyframes bringInquiery {
+    from{margin-left:0rem;
+         opacity:0;}
+    to{margin-left:0rem;
+        opacity:1;}
+}
+
+@keyframes removeInquiery {
+    from{margin-left:-20rem;
+         opacity:1;}
+    to{margin-left:0rem;
+        opacity:0;}
+}
+
+@keyframes closeSocialLinks {
+    from{margin-left:40rem;
+         opacity:1;}
+    to{margin-left:30rem;
+        opacity:0;}
+}
+
+.submitBut {
+    font-size:1.2rem;
+    padding:1.1rem;
+    border:2px solid;
+}
+
+#follow {
+    display:block;
+    float:right;
+    font-weight:bold;
+    width:100%;
+    margin-bottom:1.5rem;
+}
+
+.socialLinks {
+    position:relative;
+    width:30%;
+    display:flex;
+    padding:1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+    cursor:pointer;
+    margin:0;
+}
+
+.socialLinks:hover {
+    z-index:2;
+}
+
+.socialIcons {
+    flex:5;
+    height:3rem;
+    transition: all ease 500ms;
+    background-color:black;
+    margin:1.5rem;}
+
+
+
+.socialIcons a {text-decoration: none;
+                margin-left:20px;
+                width:100%;
+                z-index:2;}
+
+.socialIcons:hover{
+    transform: scale(1.5);
+}
+
+
+/*==================  DISPLAY CONTENT FOR PROTFOLIO ===================*/
+
+.displayContent {
+        background-color:black;
+        width:100vw;
+        height:100%;
+        top:0;
+        position: absolute;
+        color:white;
+        visibility:hidden;
+}
+
+
+.col1 {
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    height:100%;
+    position: relative;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.col2 {
+    display:flex;
+    flex-direction:column;
+    width:45%;
+    height:100%;
+    position: relative;
+    float:left;
+}
+
+.pTitle  {
+   letter-spacing:10px;
+    font-size:3rem;
+    width:100%;
+    padding:2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top:10rem;
+}
+
+
+.pImg {
+    width:100%;
+    height:100%;
+    margin:2rem;
+    margin-bottom:5rem;
+}
+
+.mimg {
+    width:100%;
+}
+
+.moreImg {
+    width:100%;
+}
+
+
+.pInfo {
+    width:100%;
+    padding:2rem;
+} 
+
+
+.closeIcon {
+        position:relative;
+        display:inline-block;
+        cursor:pointer;
+        z-index:50;
+        margin:30px;
+        right:left;
+        top:0;
+    }
+
+.closeIcon:hover {
+    transform: rotate(180deg);
+    transition: transform 200me ease;
+}
+ 
+    .strokev {
+        width:100px;
+        height:10px;
+        margin:5px;
+        z-index:100;
+        background-color:white;
+    }
+
+.str1v{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(0px, 6px);
+}
+
+.str3v {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-5px, -8px);
+    
+}
+
+/*=================     FOOTER= ========================*/
+
+.footer {
+    width:100%;
+    height:20%;
+    display:flex;
+    align-items:center;
+    padding:20px;
+    flex-direction:row;
+    background-color:#00cece;
+    color:white;
+    margin-bottom:0;
+    bottom:0;
+    position: relative;
+}
+
+.socials {
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+
+h5  a {
+    text-decoration:none;
+    color:black;
+    
+}
+
+
+h5 a {
+    padding:2rem;
+}
